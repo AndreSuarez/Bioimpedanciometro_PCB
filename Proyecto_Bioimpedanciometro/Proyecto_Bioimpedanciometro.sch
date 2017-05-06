@@ -829,9 +829,9 @@ Wire Wire Line
 	2150 650  1600 650 
 Wire Wire Line
 	2150 750  1600 750 
-Text Label 1600 1850 0    60   ~ 0
-RXD
 Text Label 1600 1950 0    60   ~ 0
+RXD
+Text Label 1600 1850 0    60   ~ 0
 TXD
 Wire Wire Line
 	9050 4350 9550 4350
@@ -867,13 +867,13 @@ $EndComp
 Wire Wire Line
 	2150 1450 1600 1450
 Wire Wire Line
-	2150 1850 1600 1850
+	2150 1950 1600 1950
 Text Label 1600 650  0    60   ~ 0
 MOSI
 Text Label 1600 750  0    60   ~ 0
 MISO
 Wire Wire Line
-	2150 1950 1600 1950
+	2150 1850 1600 1850
 Text Label 1600 850  0    60   ~ 0
 SCK
 Wire Wire Line
