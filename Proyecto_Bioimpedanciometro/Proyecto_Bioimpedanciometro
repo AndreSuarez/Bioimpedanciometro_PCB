@@ -1,0 +1,47 @@
+Source,C:/Users/ACER/Documents/GitHub/Bioimpedanciometro_PCB/Proyecto_Bioimpedanciometro/Proyecto_Bioimpedanciometro.sch
+Kicad Rev,Eeschema 4.0.2-stable
+Generated Date,08/05/2017 16:08:52
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+BIO1,AD5933,Proyecto_Bioimpedanciometro-cache,AD5933
+U2,AD8606,Proyecto_Bioimpedanciometro-cache,AD8606
+U1,ADG849,Proyecto_Bioimpedanciometro-cache,ADG849
+R5,50k,device,R
+R8,50k,device,R
+R1,Rcal,device,R
+R3,Rfb,device,R
+R2,50k,device,R
+R4,50k,device,R
+C4,47nF,device,C
+R9,20k,device,R
+R7,20k,device,R
+R6,0,device,R
+Y1,Crystal_Small,device,Crystal_Small
+C9,18pF,device,C
+C10,18pF,device,C
+C6,C,device,C
+C3,1uF,device,C
+C5,1uF,device,C
+C7,0,1uF,device,C
+IC1,ATMEGA328P-A,atmel,ATMEGA328P-A
+U3,APD3339,Proyecto_Bioimpedanciometro-cache,APD3339
+C2,0,1uF,device,C
+P3,CONN_01X04,conn,CONN_01X04
+C1,0,1uF,device,C
+C8,0,1uF,device,C
+P2,CONN_01X02,conn,CONN_01X02
+P4,CONN_01X02,conn,CONN_01X02
+P5,CONN_01X01,conn,CONN_01X01
+P6,CONN_01X02,conn,CONN_01X02
+P7,CONN_01X02,conn,CONN_01X02
+P8,CONN_01X02,conn,CONN_01X02
+C11,0,1uF,device,C
+U4,KC5032A_CM,Proyecto_Bioimpedanciometro-cache,KC5032A_CM
+P1,CONN_01X07,conn,CONN_01X07
+C12,0,01uF,device,C
+P9,CONN_01X02,conn,CONN_01X02
