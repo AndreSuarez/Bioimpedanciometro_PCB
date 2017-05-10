@@ -72,6 +72,10 @@ D Microcontrolador
 F Datasheets/Atmel-42735-8-bit-AVR-Microcontroller-ATmega328-328P_Datasheet.pdf
 $ENDCMP
 #
+$CMP Jumper
+D Resistor
+$ENDCMP
+#
 $CMP KC5032A_CM
 F Datasheets/KC5032A_CM.pdf
 $ENDCMP
