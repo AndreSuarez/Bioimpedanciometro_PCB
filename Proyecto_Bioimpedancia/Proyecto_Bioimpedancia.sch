@@ -116,8 +116,6 @@ F 3 "" H 4750 1500 60  0000 C CNN
 	1    4850 1500
 	1    0    0    -1  
 $EndComp
-Text Notes 2450 650  0    118  ~ 0
-Señales Analogicos
 $Comp
 L 0,1uF C15
 U 1 1 5911396D
@@ -212,9 +210,9 @@ $EndComp
 Text Label 10700 2700 0    39   ~ 0
 MCLK
 Text Label 8150 1450 0    39   ~ 0
-ADC3
+CTRL_MCLK
 Text Label 8800 2700 0    39   ~ 0
-ADC3
+CTRL_MCLK
 Text Label 8800 2900 0    39   ~ 0
 GND
 $Comp
@@ -266,7 +264,7 @@ AGND
 Text Label 5650 1450 0    39   ~ 0
 SIGNAL_A1
 Text Label 4000 1350 0    39   ~ 0
-ADC2
+CTRL_SWITCH
 Text Label 4250 1550 0    39   ~ 0
 AGND
 Text Label 4000 1450 0    39   ~ 0
@@ -312,7 +310,7 @@ ADC0
 Text Label 8150 1250 0    39   ~ 0
 ADC1
 Text Label 8150 1350 0    39   ~ 0
-ADC2
+CTRL_SWITCH
 Text Label 8150 1750 0    39   ~ 0
 RESET
 Text Label 8150 1850 0    39   ~ 0
@@ -399,7 +397,7 @@ U 1 1 5912ECD8
 P 5500 1350
 F 0 "R8" H 5530 1370 50  0000 L CNN
 F 1 "RCAL" H 5250 1350 50  0000 L CNN
-F 2 "" H 5500 1350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5500 1350 50  0001 C CNN
 F 3 "" H 5500 1350 50  0000 C CNN
 	1    5500 1350
 	0    1    1    0   
@@ -415,8 +413,8 @@ L R_Small R5
 U 1 1 59132524
 P 1550 2450
 F 0 "R5" H 1580 2470 50  0000 L CNN
-F 1 "R_CAL" H 1580 2410 50  0000 L CNN
-F 2 "" H 1550 2450 50  0000 C CNN
+F 1 "R_GAIN" H 1580 2410 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 1550 2450 50  0001 C CNN
 F 3 "" H 1550 2450 50  0000 C CNN
 	1    1550 2450
 	1    0    0    -1  
@@ -493,7 +491,7 @@ U 1 1 5912EC72
 P 6700 2700
 F 0 "Y1" H 6700 2800 50  0000 C CNN
 F 1 "AMB3_16M" H 6700 2600 50  0000 C CNN
-F 2 "Huellas:AMB3_Crystal_5mm_x_3,2mm_16M" H 6700 2700 50  0001 C CNN
+F 2 "Crystals:Crystal_SMD_Abracon_ABM3-2pin_5.0x3.2mm_HandSoldering" H 6700 2700 50  0001 C CNN
 F 3 "" H 6700 2700 50  0000 C CNN
 	1    6700 2700
 	1    0    0    -1  
@@ -595,32 +593,32 @@ AGND
 $Comp
 L CONN_01X02 P3
 U 1 1 59144527
-P 7000 4650
-F 0 "P3" H 7000 4800 50  0000 C CNN
-F 1 "CONN_01X02" V 7100 4650 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 7000 4650 50  0001 C CNN
-F 3 "" H 7000 4650 50  0000 C CNN
-	1    7000 4650
+P 7000 4500
+F 0 "P3" H 7000 4650 50  0000 C CNN
+F 1 "CONN_01X02" V 7100 4500 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 7000 4500 50  0001 C CNN
+F 3 "" H 7000 4500 50  0000 C CNN
+	1    7000 4500
 	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X02 P4
 U 1 1 59144600
-P 7900 4650
-F 0 "P4" H 7900 4800 50  0000 C CNN
-F 1 "CONN_01X02" V 8000 4650 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 7900 4650 50  0001 C CNN
-F 3 "" H 7900 4650 50  0000 C CNN
-	1    7900 4650
+P 8400 5350
+F 0 "P4" H 8400 5500 50  0000 C CNN
+F 1 "CONN_01X02" V 8500 5350 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 8400 5350 50  0001 C CNN
+F 3 "" H 8400 5350 50  0000 C CNN
+	1    8400 5350
 	1    0    0    -1  
 $EndComp
-Text Label 7350 4600 0    39   ~ 0
+Text Label 7850 5300 0    39   ~ 0
 Z_UK
-Text Label 7350 4700 0    39   ~ 0
-IN_OPAMB
-Text Label 6350 4600 0    39   ~ 0
+Text Label 7850 5400 0    39   ~ 0
+SIGNAL_A2
+Text Label 6350 4450 0    39   ~ 0
 V_FUENTE
-Text Label 6350 4700 0    39   ~ 0
+Text Label 6350 4550 0    39   ~ 0
 AGND
 $Comp
 L R0 R12
@@ -745,7 +743,7 @@ U 1 1 59170321
 P 1300 4400
 F 0 "W1" H 1300 4670 50  0000 C CNN
 F 1 "TEST_1P" H 1300 4600 50  0000 C CNN
-F 2 "" H 1500 4400 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1500 4400 50  0001 C CNN
 F 3 "" H 1500 4400 50  0000 C CNN
 	1    1300 4400
 	1    0    0    -1  
@@ -756,7 +754,7 @@ U 1 1 591709B6
 P 1650 4400
 F 0 "W2" H 1650 4670 50  0000 C CNN
 F 1 "TEST_1P" H 1650 4600 50  0000 C CNN
-F 2 "" H 1850 4400 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1850 4400 50  0001 C CNN
 F 3 "" H 1850 4400 50  0000 C CNN
 	1    1650 4400
 	1    0    0    -1  
@@ -767,7 +765,7 @@ U 1 1 59170A82
 P 2000 4400
 F 0 "W3" H 2000 4670 50  0000 C CNN
 F 1 "TEST_1P" H 2000 4600 50  0000 C CNN
-F 2 "" H 2200 4400 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 2200 4400 50  0001 C CNN
 F 3 "" H 2200 4400 50  0000 C CNN
 	1    2000 4400
 	1    0    0    -1  
@@ -778,17 +776,17 @@ U 1 1 59170AC8
 P 2350 4400
 F 0 "W4" H 2350 4670 50  0000 C CNN
 F 1 "TEST_1P" H 2350 4600 50  0000 C CNN
-F 2 "" H 2550 4400 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 2550 4400 50  0001 C CNN
 F 3 "" H 2550 4400 50  0000 C CNN
 	1    2350 4400
 	1    0    0    -1  
 $EndComp
 Text Label 1300 5100 1    39   ~ 0
-OUT_OPAM1
+SIGNAL_A1
 Text Label 1650 5100 1    39   ~ 0
-VOUT
+VOUT_AD5933
 Text Label 2000 5100 1    39   ~ 0
-IN_OPAMB
+SIGNAL_A2
 Text Label 2350 5100 1    39   ~ 0
 MCLK
 $Comp
@@ -797,20 +795,20 @@ U 1 1 59185387
 P 2700 4400
 F 0 "W5" H 2700 4670 50  0000 C CNN
 F 1 "TEST_1P" H 2700 4600 50  0000 C CNN
-F 2 "" H 2900 4400 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 2900 4400 50  0001 C CNN
 F 3 "" H 2900 4400 50  0000 C CNN
 	1    2700 4400
 	1    0    0    -1  
 $EndComp
 Text Label 2700 5100 1    39   ~ 0
-VIN
+VIN_AD5933
 $Comp
 L TEST_1P W6
 U 1 1 59188B66
 P 3100 4400
 F 0 "W6" H 3100 4670 50  0000 C CNN
 F 1 "TEST_1P" H 3100 4600 50  0000 C CNN
-F 2 "" H 3300 4400 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 3300 4400 50  0001 C CNN
 F 3 "" H 3300 4400 50  0000 C CNN
 	1    3100 4400
 	1    0    0    -1  
@@ -847,10 +845,10 @@ GND
 Text Label 10500 2900 0    39   ~ 0
 3V3
 $Comp
-L 10K R?
+L 10K R10
 U 1 1 591650D4
 P 1200 5800
-F 0 "R?" H 1230 5820 50  0000 L CNN
+F 0 "R10" H 1230 5820 50  0000 L CNN
 F 1 "10K" H 1230 5760 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 1130 5720 50  0001 C CNN
 F 3 "" H 1200 5800 50  0000 C CNN
@@ -859,10 +857,10 @@ F 4 "RMCF0805FT10K0TR-ND" H 1330 5920 39  0001 C CNN "RES SMD 10K OHM 1% 1/8W 08
 	1    0    0    -1  
 $EndComp
 $Comp
-L 10K R?
+L 10K R11
 U 1 1 59165125
 P 1500 5800
-F 0 "R?" H 1530 5820 50  0000 L CNN
+F 0 "R11" H 1530 5820 50  0000 L CNN
 F 1 "10K" H 1530 5760 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 1430 5720 50  0001 C CNN
 F 3 "" H 1500 5800 50  0000 C CNN
@@ -885,10 +883,10 @@ SDA
 Text Label 1050 6100 0    39   ~ 0
 SCL
 $Comp
-L Jumper J?
+L Jumper J2
 U 1 1 591891AD
 P 8250 1550
-F 0 "J?" V 8200 1600 50  0000 L CNN
+F 0 "J2" V 8200 1600 50  0000 L CNN
 F 1 "Jumper" V 8200 1250 50  0000 L CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8250 1550 50  0001 C CNN
 F 3 "" H 8250 1550 50  0000 C CNN
@@ -896,10 +894,10 @@ F 3 "" H 8250 1550 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper J?
+L Jumper J3
 U 1 1 5918A975
 P 8250 1650
-F 0 "J?" V 8200 1700 50  0000 L CNN
+F 0 "J3" V 8200 1700 50  0000 L CNN
 F 1 "Jumper" V 8200 1350 50  0000 L CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8250 1650 50  0001 C CNN
 F 3 "" H 8250 1650 50  0000 C CNN
@@ -911,7 +909,7 @@ Señal de Reloj Externo
 Text Notes 7750 3400 0    59   ~ 0
 Pulsador Reset
 Text Notes 8950 3400 0    59   ~ 0
-Oscilador AD5933
+Oscilador AD5933 (MCLK)
 Text Notes 9300 2200 0    59   ~ 0
 Bioimpedanciometro
 Text Notes 7000 2200 0    59   ~ 0
@@ -919,11 +917,11 @@ Microcontrolador
 Text Notes 1000 900  0    59   ~ 0
 Amplificador A1
 Text Notes 3000 2350 0    59   ~ 0
-Amplicador A2
+Amplificador A2
 Text Notes 4400 900  0    59   ~ 0
 Switch Medida Bioimpedancia
 Text Notes 4550 4050 0    59   ~ 0
-Conector Bootloader
+Quemador Bootloader
 Text Notes 4150 5000 0    59   ~ 0
 Conector Progrmador \ndel Microcontrolador
 Text Notes 9350 4150 0    59   ~ 0
@@ -968,8 +966,6 @@ Wire Wire Line
 	9250 2700 8800 2700
 Wire Wire Line
 	9250 2900 8800 2900
-Wire Wire Line
-	7900 1450 8150 1450
 Wire Wire Line
 	1350 1600 2250 1600
 Wire Wire Line
@@ -1045,8 +1041,6 @@ Wire Wire Line
 	6150 1150 6800 1150
 Wire Wire Line
 	6800 1050 6500 1050
-Wire Wire Line
-	7900 1350 8150 1350
 Wire Wire Line
 	7900 1250 8150 1250
 Wire Wire Line
@@ -1201,13 +1195,13 @@ Wire Wire Line
 Wire Wire Line
 	10300 5100 10550 5100
 Wire Wire Line
-	7700 4600 7350 4600
+	8200 5300 7850 5300
 Wire Wire Line
-	7700 4700 7350 4700
+	8200 5400 7850 5400
 Wire Wire Line
-	6800 4600 6350 4600
+	6800 4450 6350 4450
 Wire Wire Line
-	6350 4700 6800 4700
+	6350 4550 6800 4550
 Wire Wire Line
 	9900 5450 10300 5450
 Wire Wire Line
@@ -1421,17 +1415,52 @@ Wire Notes Line
 Wire Notes Line
 	650  5250 3750 5250
 Wire Notes Line
-	8850 4000 8850 5700
-Wire Notes Line
-	8850 5700 6100 5700
-Wire Notes Line
-	6100 5700 6100 4000
-Wire Notes Line
-	6100 4000 8850 4000
+	6100 4000 8900 4000
 Wire Wire Line
-	6400 5150 6950 5150
-Text Label 6400 5150 0    59   ~ 0
+	7800 4550 8350 4550
+Text Label 7800 4550 0    59   ~ 0
 GND
-Text Label 6950 5150 0    59   ~ 0
+Text Label 8350 4550 0    59   ~ 0
 AGND
+Wire Wire Line
+	7900 1450 8150 1450
+Wire Wire Line
+	7900 1350 8150 1350
+Wire Notes Line
+	8900 4000 8900 4900
+Wire Notes Line
+	8900 4900 6100 4900
+Wire Notes Line
+	6100 4900 6100 4000
+Text Notes 2450 650  0    118  ~ 0
+Señales Analogicas (Medición)
+Wire Notes Line
+	8900 4950 8900 5700
+Wire Notes Line
+	8900 5700 6100 5700
+Wire Notes Line
+	6100 5700 6100 4950
+Wire Notes Line
+	6100 4950 8900 4950
+Text Notes 6550 5050 0    60   ~ 0
+Electrodos de Contacto y R de Calibración
+$Comp
+L Jumper J1
+U 1 1 5918524B
+P 6800 5250
+F 0 "J1" V 6750 5300 50  0000 L CNN
+F 1 "Jumper_Calibration" V 6900 5150 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6800 5250 50  0001 C CNN
+F 3 "" H 6800 5250 50  0000 C CNN
+	1    6800 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 5250 7150 5250
+Wire Wire Line
+	6700 5250 6400 5250
+Text Label 7150 5250 0    39   ~ 0
+FEEDBACK_A2
+Text Label 6400 5250 0    39   ~ 0
+SIGNAL_A2
 $EndSCHEMATC
