@@ -57,6 +57,10 @@ $CMP ADG819
 F Datasheets/ADG819.pdf
 $ENDCMP
 #
+$CMP ADP3303
+F Datasheets/ADP3303.pdf
+$ENDCMP
+#
 $CMP ADP3339
 F Datasheets/ADP3339.pdf
 $ENDCMP
