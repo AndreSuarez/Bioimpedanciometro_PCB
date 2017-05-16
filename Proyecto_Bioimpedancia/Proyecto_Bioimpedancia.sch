@@ -1479,4 +1479,14 @@ F 3 "" H 5600 5200 50  0000 C CNN
 	1    5600 5200
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	10350 1450 10350 2250
+Wire Notes Line
+	10350 2250 11050 2250
+Wire Notes Line
+	11050 2250 11050 1450
+Wire Notes Line
+	11050 1450 10350 1450
+Text Notes 10500 2050 0    39   ~ 0
+No olvidar \nEEPROM para \nla memoria \nde datos \n24LC64  que \nse halla en \nel datasheet \ndel ad5933 \n !!!!!
 $EndSCHEMATC
