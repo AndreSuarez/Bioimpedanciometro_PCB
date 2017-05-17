@@ -16,6 +16,10 @@ $CMP 10uF
 D Unpolarized capacitor
 $ENDCMP
 #
+$CMP 18pF
+D Unpolarized capacitor
+$ENDCMP
+#
 $CMP 1K
 D Resistor
 $ENDCMP
@@ -82,6 +86,10 @@ $ENDCMP
 #
 $CMP KC5032A_CM
 F Datasheets/KC5032A_CM.pdf
+$ENDCMP
+#
+$CMP Led_Small_Reg
+D Led
 $ENDCMP
 #
 $CMP R0
