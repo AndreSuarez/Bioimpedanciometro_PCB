@@ -16,12 +16,20 @@ $CMP 10uF
 D Unpolarized capacitor
 $ENDCMP
 #
+$CMP 140K
+D Resistor
+$ENDCMP
+#
 $CMP 18pF
 D Unpolarized capacitor
 $ENDCMP
 #
 $CMP 1K
 D Resistor
+$ENDCMP
+#
+$CMP 1nF
+D Unpolarized capacitor
 $ENDCMP
 #
 $CMP 1uF
@@ -48,6 +56,10 @@ $CMP 50K
 D Resistor
 $ENDCMP
 #
+$CMP 78,7K
+D Resistor
+$ENDCMP
+#
 $CMP AD5933
 D Regulador_3v3
 F Datasheets/AD5933.pdf
@@ -66,6 +78,10 @@ F Datasheets/ADG819.pdf
 $ENDCMP
 #
 $CMP ADP3303
+F Datasheets/ADP3303.pdf
+$ENDCMP
+#
+$CMP ADP3334
 F Datasheets/ADP3303.pdf
 $ENDCMP
 #
